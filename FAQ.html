@@ -25,10 +25,21 @@
             padding: 20px 0;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative; /* This allows absolute positioning of the image */
+        }
+
+        header img {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            height: 60px; /* Adjust this height according to your image */
+            width: auto;
         }
 
         header h1 {
             margin-bottom: 10px;
+            margin-left: 100px; /* Adjust this value based on your image width */
         }
 
         .container {
@@ -117,12 +128,24 @@
                 width: 100%;
                 text-align: center;
             }
+
+            header h1 {
+                margin-left: 0; /* Reset margin for smaller screens */
+            }
+
+            header img {
+                position: static;
+                transform: none;
+                display: block;
+                margin: 0 auto 10px auto;
+            }
         }
     </style>
 </head>
 <body>
 
     <header>
+        <img src="nex-logo.png" alt="Logo"> <!-- Replace 'your-image.png' with the path to your PNG file -->
         <h1>NEX-GDDP-CMIP6 Dataset Q&A</h1>
         <p>Comprehensive Overview and Insights</p>
     </header>
@@ -150,7 +173,7 @@
             <ul>
                 <li><strong>High Resolution:</strong> The NEX-GDDP-CMIP6 dataset offers downscaled climate projections at a high spatial resolution (approximately 25 km x 25 km), making it valuable for regional and local climate impact studies.</li>
                 <li><strong>Multi-Model Ensemble:</strong> It provides projections from multiple CMIP6 models, enabling a comprehensive analysis of uncertainties and variability across different climate models.</li>
-                <li><strong>Extensive Temporal Coverage:</strong> The dataset covers the historical period and multiple future scenarios (e.g., SSPs), allowing for long-term trend analysis.</li>
+                <li><strong>Extensive Temporal Coverage:</strong> The dataset covers the historical period and multiple future scenarios (e.g., Shared Socioeconomic Pathways - SSPs), allowing for long-term trend analysis.</li>
                 <li><strong>Global Coverage:</strong> The dataset includes projections for almost every land area globally, making it applicable to a wide range of geographic regions.</li>
             </ul>
         </section>
