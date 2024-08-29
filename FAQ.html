@@ -1,18 +1,248 @@
- <html>
-            <head>
-                <title>NEX Downscaled FAQ</title>
-            </head>
-            <style>
-        
-            </style>
-            <body>
-                <div style="background-color:rgba(0, 0, 0, 0.52);color:white;padding:20px;">
-                    <!-- <img src='dl.png'  object-position="20px 10%"style="float:left;margin:0px 50px">  -->
-                    <h1>NEX Downscaled Datasets FAQ</h1>
-                    <h2></h2>
-                    <h2></h2>
-                    <h2></h2>
-                </div> 
-            </body>
-            
- </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEX-GDDP-CMIP6 Dataset Q&A</title>
+    <style>
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #004080;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 5px 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #004080;
+            background-color: #e6f0ff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #cce0ff;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 1.5em;
+            color: #004080;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #e6f0ff;
+            padding-bottom: 5px;
+        }
+
+        section p {
+            margin-bottom: 10px;
+        }
+
+        section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        section ul li {
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #004080;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 2px solid #e6f0ff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li a {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>NEX-GDDP-CMIP6 Dataset Q&A</h1>
+        <p>Comprehensive Overview and Insights</p>
+    </header>
+
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#strengths">Key Strengths</a></li>
+                <li><a href="#limitations">Key Limitations</a></li>
+                <li><a href="#applications">Research Applications</a></li>
+                <li><a href="#common-mistakes">Common Mistakes</a></li>
+                <li><a href="#spurious-features">Spurious Features</a></li>
+                <li><a href="#corrections">Corrections Applied</a></li>
+                <li><a href="#conversion-steps">Conversion Steps</a></li>
+                <li><a href="#comparable-datasets">Comparable Datasets</a></li>
+                <li><a href="#uncertainty">Uncertainty Characterization</a></li>
+                <li><a href="#cloud-platforms">Cloud Platforms</a></li>
+                <li><a href="#public-code">Public Code</a></li>
+                <li><a href="#summary">Summary</a></li>
+            </ul>
+        </nav>
+
+        <section id="strengths">
+            <h2>1. What are the key strengths of this data set?</h2>
+            <ul>
+                <li><strong>High Resolution:</strong> The NEX-GDDP-CMIP6 dataset offers downscaled climate projections at a high spatial resolution (approximately 25 km x 25 km), making it valuable for regional and local climate impact studies.</li>
+                <li><strong>Multi-Model Ensemble:</strong> It provides projections from multiple CMIP6 models, enabling a comprehensive analysis of uncertainties and variability across different climate models.</li>
+                <li><strong>Extensive Temporal Coverage:</strong> The dataset covers the historical period and multiple future scenarios (e.g., SSPs), allowing for long-term trend analysis.</li>
+                <li><strong>Global Coverage:</strong> The dataset includes projections for almost every land area globally, making it applicable to a wide range of geographic regions.</li>
+            </ul>
+        </section>
+
+        <section id="limitations">
+            <h2>2. What are the key limitations of this data set?</h2>
+            <ul>
+                <li><strong>Biases in Downscaling:</strong> Although downscaled, the data may still carry biases from the original GCMs (General Circulation Models), which could affect the accuracy of regional projections.</li>
+                <li><strong>Computational Demand:</strong> The high spatial and temporal resolution of the dataset can require significant computational resources for processing and analysis.</li>
+                <li><strong>Limited Variables:</strong> While it covers key climate variables, some studies may require additional variables not included in the dataset.</li>
+            </ul>
+        </section>
+
+        <section id="applications">
+            <h2>3. What are the typical research applications of these data? What are examples from your work?</h2>
+            <p><strong>Typical Research Applications:</strong></p>
+            <ul>
+                <li><strong>Climate Impact Studies:</strong> Assessing the potential impacts of climate change on agriculture, water resources, public health, and infrastructure at a regional scale.</li>
+                <li><strong>Extreme Event Analysis:</strong> Investigating changes in the frequency, intensity, and duration of extreme weather events such as heatwaves, floods, and droughts.</li>
+                <li><strong>Adaptation and Mitigation Planning:</strong> Supporting the development of climate adaptation and mitigation strategies by providing localized climate projections.</li>
+            </ul>
+            <p><strong>Examples from Your Work:</strong></p>
+            <p>In your projects, you may have used NEX-GDDP-CMIP6 data for high-resolution flood risk assessments, integrating it with hydrological models to predict future flood scenarios under different climate pathways.</p>
+        </section>
+
+        <section id="common-mistakes">
+            <h2>4. What are some common mistakes that users encounter when processing or interpreting these data?</h2>
+            <ul>
+                <li><strong>Ignoring Biases:</strong> Users may overlook the inherent biases from GCMs and the downscaling process, leading to overconfident conclusions.</li>
+                <li><strong>Mishandling Time Aggregation:</strong> Improper aggregation of daily data to monthly or yearly scales can result in misinterpretation of trends or extreme events.</li>
+                <li><strong>Misunderstanding Scenarios:</strong> Confusion between different SSPs or misunderstanding their implications can lead to inaccurate climate impact assessments.</li>
+            </ul>
+        </section>
+
+        <section id="spurious-features">
+            <h2>5. What are the likely spurious (non-climatic) features, if any, of timeseries derived from these data?</h2>
+            <p><strong>Non-Climatic Artifacts:</strong> Certain trends or discontinuities may arise from inconsistencies in model simulations, rather than from actual climate signals. These could be due to differences in model resolution or parameterizations across different GCMs.</p>
+        </section>
+
+        <section id="corrections">
+            <h2>6. What corrections were applied to account for changes in observing systems, sampling methods or density, and satellite drift or degradation?</h2>
+            <p><strong>Bias Correction:</strong> The NEX-GDDP-CMIP6 data underwent bias correction to align the downscaled outputs more closely with observed climate data, reducing the impact of systematic errors from GCMs.</p>
+        </section>
+
+        <section id="conversion-steps">
+            <h2>7. Describe any conversion steps that are necessary or general strategies to compare these data with model output.</h2>
+            <ul>
+                <li><strong>Regridding:</strong> Regrid the dataset to match the resolution of other models or observational data for comparison.</li>
+                <li><strong>Anomaly Calculation:</strong> Calculate anomalies relative to a baseline period to compare with other datasets or model outputs that might be on different absolute scales.</li>
+            </ul>
+        </section>
+
+        <section id="comparable-datasets">
+            <h2>8. What are some comparable data sets, if any? Why use this data set instead of another?</h2>
+            <ul>
+                <li><strong>CORDEX:</strong> Provides downscaled climate projections similar to NEX-GDDP-CMIP6 but from different regional models. NEX-GDDP-CMIP6 is preferred for its integration with the latest CMIP6 models and global coverage.</li>
+                <li><strong>NEX-GDDP-CMIP5:</strong> The previous version of the dataset using CMIP5 models. The CMIP6 version incorporates updated scenarios and models, offering improvements in climate projection accuracy.</li>
+            </ul>
+        </section>
+
+        <section id="uncertainty">
+            <h2>9. How is uncertainty characterized in these data?</h2>
+            <ul>
+                <li><strong>Multi-Model Spread:</strong> The range of projections from different models within the ensemble is used to quantify uncertainty, giving users a sense of the confidence level in the projections.</li>
+                <li><strong>Scenario-Based Uncertainty:</strong> Different SSPs represent various socio-economic pathways, adding another layer of uncertainty to future climate projections.</li>
+            </ul>
+        </section>
+
+        <section id="cloud-platforms">
+            <h2>10. Can you recommend any cloud platforms and/or online plotting tools where one can visualize and interact with these data? Please point to those resources, as well as share a few figures from your own work.</h2>
+            <ul>
+                <li><strong>Google Earth Engine:</strong> Provides tools to visualize and interact with the NEX-GDDP-CMIP6 data.</li>
+                <li><strong>AWS Open Data on Climate:</strong> Allows for data visualization and analysis using cloud computing resources.</li>
+            </ul>
+            <p><strong>Figures from Your Work:</strong></p>
+            <p>You might include maps showing projected temperature or precipitation changes over a specific region, or timeseries plots highlighting trends in extreme weather events.</p>
+        </section>
+
+        <section id="public-code">
+            <h2>11. Are there any publicly available pieces of code that illustrate how to access and analyze these data? If so, where?</h2>
+            <p><strong>NASA Earth Exchange (NEX) GitHub:</strong> Offers scripts and tools for accessing and processing NEX-GDDP-CMIP6 data. <a href="https://github.com/nasa/NEX-GDDP" target="_blank">Link: NEX-GDDP GitHub</a></p>
+        </section>
+
+        <section id="summary">
+            <h2>12. Provide a summary statement about these data and their utility for climate research and model evaluation.</h2>
+            <p>The NEX-GDDP-CMIP6 dataset is an invaluable resource for high-resolution climate impact assessments, offering detailed projections from the latest generation of climate models. Its strengths in spatial resolution, global coverage, and multi-model ensemble make it suitable for a wide range of applications. However, users must be cautious of potential biases and ensure proper data handling to avoid misinterpretations. The dataset is well-suited for research in climate change adaptation, extreme event analysis, and regional impact studies, with ongoing developments in tools and platforms facilitating its broader use in the scientific community.</p>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 Your Name or Organization
+    </footer>
+
+</body>
+</html>
